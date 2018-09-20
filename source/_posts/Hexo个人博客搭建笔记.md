@@ -1,6 +1,9 @@
 ---
 title: Hexo个人博客搭建笔记
 date: 2017-03-31 16:40:03
+category:
+  - Hexo
+  - init
 tags: Hexo
 ---
 
@@ -11,6 +14,8 @@ Node.js开发者，早已配置好Node.js环境，本文不做重述。[前往�
 
 ### Git环境
 工作、学习中依赖Git，环境搭建也不做重述。[前往学习](https://www.baidu.com)
+
+<!--more-->
 
 ### Hexo环境
 [官网文档](https://hexo.io/docs/)

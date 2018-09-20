@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Memory | AndyFan的博客
+subtitle: bate
 description: 采用Hexo搭建的个人博客
 author: Andy Fan
 language: zh-CN
@@ -17,7 +17,7 @@ root: /
 permalink: :year/:month/:title/
 permalink_defaults:
 
-# Directory
+# 文件夹
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -27,45 +27,44 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
+# 文章
+new_post_name: :year-:month-:day-:title.md # 新文章的标题
+default_layout: post  # 默认布局
+auto_spacing: true # 在中文和英文中间加入空格
+titlecase: false # 把文章标题转化为 titlecase
+external_link: true # 在新标签中打开连接
+filename_case: 0 # 把文件名称转化为小写（1）或大写（2）
+render_drafts: false #显示草稿
+post_asset_folder: false #启用Asset文件夹
+relative_link: false #使用相对地址
+future: true #显示未来的文章
+highlight: #代码块设置
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: true
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# 分类 & 标签
+default_category: uncategorized #默认分类
+category_map:  #分类别名
+tag_map:  #标签别名
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+# 日期 & 时间 格式设置
+## Hexo 使用 Moment.js 解析时间
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
-# Pagination
+# 分页
 ## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
+per_page: 10  #每页显示的文章数
+pagination_dir: page  #分页的目录
 
-# Extensions
+# 拓展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-memory
 
-# Deployment
+# 部署
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
